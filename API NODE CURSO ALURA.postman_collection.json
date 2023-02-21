@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "e94b8445-1ff4-41c8-a049-ce6dba3691be",
+		"name": "API NODE CURSO ALURA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25968308"
+	},
+	"item": [
+		{
+			"name": "GET BY EDITORA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/livros/busca?editora=Alura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"busca"
+					],
+					"query": [
+						{
+							"key": "editora",
+							"value": "Alura"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST LIVROS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Curso de Node\",\r\n    \"autor\": \"634564c188943acc738bf97b\",\r\n    \"editora\": \"Alura\",\r\n    \"numeroPaginas\": 250\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT LIVROS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"autor\": \"634564c188943acc738bf97b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/livros/634485a31bc5e7c48ec0cef9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"634485a31bc5e7c48ec0cef9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/livros/634485a31bc5e7c48ec0cef9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"livros",
+						"634485a31bc5e7c48ec0cef9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/autores/6345650288943acc738bf97f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"autores",
+						"6345650288943acc738bf97f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
